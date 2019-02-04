@@ -1,7 +1,8 @@
 function takeANumber(currentLine) {
-  var newPersonNumber = currentLine.length + 1;
-  currentLine.push(newPerson);
-  return `Welcome, ${newPerson}. You are number ${newPersonNumber} in line.`;
+  var lastPersonNumber = currentLine.[currentLine.length - 1];
+  var newPersonNumber = lastPersonNumber + 1;
+  currentLine.push(newPersonNumber);
+  return `You are number ${newPersonNumber} in line.`;
   
   // return a number that represents  number on a ticket
   
